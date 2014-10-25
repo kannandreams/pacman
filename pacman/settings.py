@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
+#print "base Dir is " + BASE_DIR + "/templates/"
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -75,7 +75,10 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+TEMPLATE_DIRS = (
+    #BASE_DIR + "/templates/",
+    os.path.join(BASE_DIR, 'templates'),
+)
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
