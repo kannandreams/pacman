@@ -1,0 +1,11 @@
+To Start the project :
+
+django-admin.py startproject pacman
+
+To  setup sqlite db
+
+python manage.py syncdb
+
+To  create an app 
+
+python manage.py startapp DaaS
